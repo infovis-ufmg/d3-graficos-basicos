@@ -1,0 +1,15 @@
+{
+"tweets": [
+{"user": "Al", "content": "I really love seafood.", "timestamp": "12-20-2013", "retweets": ["Raj","Pris","Roy"], "favorites": ["Sam"]},
+{"user": "Al", "content": "I take that back, this doesn't taste so good.", "timestamp": "01-26-2014", "retweets": ["Roy"], "favorites": []},
+{"user": "Al", "content": "From now on, I'm only eating cheese sandwiches.", "timestamp": "01-12-2014", "retweets": [], "favorites": ["Roy","Sam"]},
+{"user": "Roy", "content": "Great workout!", "timestamp": "02-24-2014", "retweets": [], "favorites": []},
+{"user": "Roy", "content": "Spectacular oatmeal!", "timestamp": "02-16-2014", "retweets": [], "favorites": []},
+{"user": "Roy", "content": "Amazing traffic!", "timestamp": "07-17-2014", "retweets": [], "favorites": []},
+{"user": "Roy", "content": "Just got a ticket for texting and driving!", "timestamp": "06-12-2014", "retweets": [], "favorites": ["Sam", "Sally", "Pris"]},
+{"user": "Pris", "content": "Going to have some boiled eggs.", "timestamp": "09-29-2015", "retweets": [], "favorites": ["Sally"]},
+{"user": "Pris", "content": "Maybe practice some gymnastics.", "timestamp": "12-10-2015", "retweets": [], "favorites": ["Sally"]},
+{"user": "Sam", "content": "@Roy Let's get lunch", "timestamp": "04-26-2016", "retweets": ["Pris"], "favorites": ["Sally", "Pris"]}
+]
+}
+

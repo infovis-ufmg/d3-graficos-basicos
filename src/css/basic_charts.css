@@ -1,0 +1,13 @@
+body{
+    
+}
+
+svg{
+    background-color: #ffffff;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
