@@ -1,13 +1,36 @@
-body{
-    
+body {
+    font: 10px, sans-serif;
 }
 
-svg{
+svg {
     background-color: #ffffff;
 }
 
+.eixo path, .eixo line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.x.eixo path {
+    display: none;
+}
+
+.barra {
+    fill: steelblue;
+}
+
+.barra:hover {
+    cursor: pointer;
+    fill: brown;
+}
+
 .line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 3px;
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.ponto {
+    fill: steelblue;
 }
