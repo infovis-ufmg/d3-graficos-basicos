@@ -50,9 +50,11 @@ function criaLineChart(dados, container) {
 //// DESENHO DAS VISUALIZAÇÕES ////
 //////////////////////////////////
 function desenhaLineChart(data, container){
+	
 	var x = d3.time.scale()
 			.range([0,width])
 			.domain(d3.extent(data, function(d) {
+			
 				return d.key;
 			}));
 			
@@ -65,13 +67,14 @@ function desenhaLineChart(data, container){
 	var xAxis = d3.svg.axis()
 		.scale(x)
 		.orient("bottom");
+		console.log("oi");
 		
 	var yAxis = d3.svg.axis()
 		.scale(y)
 		.orient("left");
 	
 	var line = d3.svg.line()
-		.x(function(d){return x(d.key);}) //x representa o ano, pego pela var data
+		.x(function(d){return x(new Date(d.key));}) //x representa o ano, pego pela var data
 		.y(function(d){return y(d.values.length);}); // y representa o usuario
 	
 	var svg = d3.select(container)
@@ -79,7 +82,7 @@ function desenhaLineChart(data, container){
 		
 	svg.append("g")
 		.attr("class", "eixoX")
-		.attr("transform", "translate(0," + (height-50) + ")")
+		.attr("transform", "translate(0," + (height - 50) + ")")
       	.call(xAxis);
       	
     svg.append("g")
@@ -94,6 +97,8 @@ function desenhaLineChart(data, container){
 }
 
 function main(dados) {
+	
+	console.log("entrei aki");
 	criaLineChart(dados,"#container-line-chart");
 	desenhaLineChart(dados,"#container-line-chart");
 	
